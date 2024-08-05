@@ -12,6 +12,7 @@ public:
     }
     vector<vector<int>> subsetsWithDup(vector<int>& arr) {
         vector<int> temp;
+        sort(arr.begin(),arr.end());
         solve(arr,0,temp);
         vector<vector<int>> sol(ans.begin(),ans.end());
         return sol;
